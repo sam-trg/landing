@@ -1,10 +1,11 @@
+"""script for generating index.html from config.yml"""
 import os
 import shutil
 from jinja2 import Environment, FileSystemLoader
 import yaml
 
 # Load configuration
-with open('config.yml', 'r') as config_file:
+with open('config.yml', 'r', encoding='utf-8') as config_file:
     config = yaml.safe_load(config_file)
 
 # Create output directory
@@ -17,7 +18,7 @@ template = env.get_template('index.html')
 
 # Generate HTML file
 output_html = template.render(config=config)
-with open(os.path.join(output_dir, 'index.html'), 'w') as fh:
+with open(os.path.join(output_dir, 'index.html'), 'w', encoding='utf-8') as fh:
     fh.write(output_html)
 
 # Copy assets folder to output directory
