@@ -1,1 +1,21 @@
-
+name: "Sam"
+picture: "assets/img/picture.jpg"
+bio: "Explorer."
+meta:
+  lang: "en"
+  description: "Explorer of fun stuff."
+  title: "Sam"
+  author: "Sam"
+  siteUrl: "https://sam.com.in/"
+links:
+  - name: "Movie List 2024"
+    url: ""
+  - name: "Playlist"
+    url: ""
+  - name: "Blog"
+    url: "https://sam.com.in/blog"
+  - name: "Photography"
+    url: "https://samarth.pp.ua/"
+  - name: "Instagram"
+    url: "https://www.instagram.com/vegansamburger"
+theme: "custom"
